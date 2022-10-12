@@ -7,8 +7,8 @@ import styles1 from '../styles/Home.module.css'
 
 const homepage = () => {
   return (
-    <body>
     
+    < div class="page-wrap" >
     <nav className={styles1.nav}>
       <div class={styles1.logo}>
           <p>MEDIPAL</p>
@@ -52,8 +52,8 @@ const homepage = () => {
 
 
 
-          
-    </body>
+          </div>
+    
   )
 }
 

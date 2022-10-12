@@ -106,3 +106,7 @@ overflow : hidden;
 transform : translate(44%,-2040%);
 overflow : hidden;
 }
+.page-wrap {
+  width: 960px;
+  margin: 0 auto;
+  }

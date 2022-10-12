@@ -97,7 +97,7 @@ background-image: linear-gradient(rgb(4, 4, 32),rgb(4, 4, 32)) ;
   list-style: none;
   font-size: 18 px;
   text-transform: uppercase;
-  padding: 30px 13px;
+  padding: 2rem 1.5rem;
   color : white;
   text-decoration : none;
 }
@@ -107,3 +107,7 @@ background-image: linear-gradient(rgb(4, 4, 32),rgb(4, 4, 32)) ;
   color: rgb(255, 255, 255);
   transition : all 0.9s ease 0s;
 }
+.page-wrap {
+  width: 960px;
+  margin: 0 auto;
+  }

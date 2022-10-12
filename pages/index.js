@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <body>
+    < div class="page-wrap" >
       
     <nav className={styles.nav}>
     <div class={styles.logo}>
@@ -37,7 +37,7 @@ export default function Home() {
 
         
 
-</body>
+</div>
         
   );
 }
