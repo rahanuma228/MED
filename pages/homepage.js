@@ -25,7 +25,7 @@ const homepage = () => {
      
   
           
-          <img src="hp6 - Copy.jpg" class={styles.im1}></img>
+          <img src="hp6 - Copy.jpg" class={styles.im1}></img>   
           <p class={styles.im2}>WELCOME TO MEDIPAL </p>
           <p class={styles.im3}>A GREAT PLACE TO RECEIVE CARE </p>
           <p class={styles.im19}>MEDIPAL offers wide range of diagnosis services and treaments. MEDIPAL helps connecting the</p>
@@ -60,6 +60,8 @@ const homepage = () => {
           <p class={styles.im21}>about your treatment and care.</p>
           
           
+          
+          
           <div class={styles1.foot}>
           <div class={styles1.logo2} >
            <p>MEDIPAL</p>
@@ -67,13 +69,8 @@ const homepage = () => {
           <p class={styles1.im7}>Leading the way in Medical Execellence, Trusted Care.</p>
          <p class={styles1.im8}>For feedback or concerns, please email us at queries@hospals.com</p>
          
-      
-
        </div>
-        
-       
-
-          </div>
+       </div>
     
   )
 }
