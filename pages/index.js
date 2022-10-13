@@ -5,13 +5,13 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    < div class="page-wrap" >
+    < div class={styles.page} >
       
     <nav className={styles.nav}>
     <div class={styles.logo}>
         <p>MEDIPAL</p>
       </div>
-      <u1 >
+      
     
      <a href="/signup">SIGN UP</a>
      <a href="/login">LOGIN</a>
@@ -19,7 +19,7 @@ export default function Home() {
      <a href="/services">SERVICES</a>
      <a href="/">ABOUT US</a>
      <a href="/homepage">Home</a>
-     </u1>
+    
   </nav>
    
 

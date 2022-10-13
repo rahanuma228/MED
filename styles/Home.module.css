@@ -107,7 +107,8 @@ background-image: linear-gradient(rgb(4, 4, 32),rgb(4, 4, 32)) ;
   color: rgb(255, 255, 255);
   transition : all 0.9s ease 0s;
 }
-.page-wrap {
-  width: 960px;
+.page{
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
   }
