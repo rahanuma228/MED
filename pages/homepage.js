@@ -32,7 +32,9 @@ const homepage = () => {
           <p class={styles.im19}>patients with the most skilled and professional doctors. We keep you involved in available  </p>
           <p class={styles.im20}>treatment options and decisions about your treatment and care. </p>
           <div class={styles.im4}><a href="/">Learn More</a></div>
+
           <img src="hp5 - Copy.jpg" class={styles.im5}></img>
+          
           <p class={styles.im6}>Care you can believe in </p>
           <p class={styles.im7}>Our Services </p>
           <img src="h7.png" class={styles.im8}></img>
@@ -56,10 +58,20 @@ const homepage = () => {
           <p class={styles.im21}>services and treaments.MEDIPAL helps connecting the patients with the most skilled and   </p>
           <p class={styles.im21}> professional doctors. We keep you involved in available treatment options and decisions   </p>
           <p class={styles.im21}>about your treatment and care.</p>
+          
+          
+          <div class={styles1.foot}>
+          <div class={styles1.logo2} >
+           <p>MEDIPAL</p>
+          </div>
+          <p class={styles1.im7}>Leading the way in Medical Execellence, Trusted Care.</p>
+         <p class={styles1.im8}>For feedback or concerns, please email us at queries@hospals.com</p>
+         
+      
 
-
-
-
+       </div>
+        
+       
 
           </div>
     

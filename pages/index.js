@@ -24,7 +24,7 @@ export default function Home() {
    
 
         <img src="shead.jpg" class={styles.about}></img>
-        
+         
         <img src="shead1.jpg" class={styles.im1}></img>
         
         <p class={styles.im2}>WELCOME TO MEDIPAL </p>
@@ -34,7 +34,16 @@ export default function Home() {
         <p class={styles.im5}> * Find doctors by their specialities</p>
         <p class={styles.im5}> * Book appointments online</p>
         <p class={styles.im5}> * Get an overview of services offered by different hsopitals</p>
+       <div class={styles.foot}>
+       <div class={styles.logo2} >
+        <p>MEDIPAL</p>
+      </div>
+      <p class={styles.im7}>Leading the way in Medical Execellence, Trusted Care.</p>
+      <p class={styles.im8}>For feedback or concerns, please email us at queries@hospals.com</p>
+     
+      
 
+       </div>
         
 
 </div>
