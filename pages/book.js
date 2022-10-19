@@ -1,4 +1,4 @@
-
+import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -12,9 +12,9 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Stack from '@mui/material/Stack';
-import styles from '../styles/Homepage.module.css'
-import styles1 from '../styles/Home.module.css'
+import styles from "../../styles/Home.module.css";
+
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -35,29 +35,12 @@ export default function book() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      name: data.get('name'),
-      gender: data.get('gender'),
-      phone: data.get('phone'),
-      date: data.get('date')
-
+      email: data.get('email'),
+      password: data.get('password'),
     });
   };
 
   return (
-    < div class={styles1.page} >
-    <nav className={styles1.nav}>
-      <div class={styles1.logo}>
-          <p>MEDIPAL</p>
-      </div>
-     
-     <a href="/signup">SIGN UP</a>
-     <a href="/login">LOGIN</a>
-     <a href="/hospitals">HOSPITALS</a>
-     <a href="/services">SERVICES</a>
-     <a href="/">ABOUT US</a>
-     <a href="/homepage">Home</a>
-     
-    </nav>
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
@@ -72,9 +55,9 @@ export default function book() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}>
-         <img src="p2.jpg" className={styles.is}></img>
+        <img src="/doctor-login.jpg" className={styles.imlg}></img>
         </Grid>
-       
+
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
@@ -85,7 +68,9 @@ export default function book() {
               alignItems: 'center',
             }}
           >
-            
+            <Avatar sx={{ m: 1, bgcolor: '#040420' }}>
+              <LockOutlinedIcon />
+            </Avatar>
             <Typography component="h1" variant="h5" sx={{fontWeight: 'bold'}}>
               WELCOME TO MEDIPAL
             </Typography>
@@ -94,48 +79,26 @@ export default function book() {
                 margin="normal"
                 required
                 fullWidth
-                id="name"
-                label="Name"
-                name="name"
-                autoComplete="name"
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
                 autoFocus
               />
               <TextField
                 margin="normal"
                 required
                 fullWidth
-                id="gender"
-                label="Gender"
-                name="gender"
-                autoComplete="gender"
-               autoFocus
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
               />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="phone"
-                label="Phone"
-                name="phone"
-                autoComplete="phone"
-                autoFocus
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Remember me"
               />
-              
-              
-              <TextField
-              margin="normal"
-              required
-                id="date"
-               label="Date"
-               //name="date"
-               type="date"
-               sx={{ width: 220 }}
-               InputLabelProps={{
-               shrink: true,
-             }}
-             />
-       
-              
               <Button
                 type="submit"
                 fullWidth
@@ -144,15 +107,23 @@ export default function book() {
               >
                 Submit
               </Button>
-              
+              <Grid container>
+                <Grid item xs>
+                  <Link href="#" variant="body2">
+                    Forgot password?
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href="#" variant="body2">
+                    {"Don't have an account? Sign Up"}
+                  </Link>
+                </Grid>
+              </Grid>
               <Copyright sx={{ mt: 5 }} />
             </Box>
           </Box>
         </Grid>
       </Grid>
     </ThemeProvider>
-    
-
-    </div>
   );
 }
